@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}
+viewproduct
+{% endblock %}
+{% block content%}
+{% if not request.session.userid %}
+<script>alert('you Have To Login First..');loction.href="/user/signin/"</script>
+{% endif %}
+{% endblock %}
